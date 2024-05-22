@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internship Project</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/logo.png" />
+    <!-- Font-awesome icon CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- Owl-carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- START MAIN MENU -->
+    <nav>
+      <div class="container">
+        <div class="nav-inner">
+          <div class="logo">
+            <a href="#"><img src="img/logo.png" alt="logo" /></a>
+          </div>
+          <div class="menu">
+            <div class="main-menu">
+              <ul class="menu-items">
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">About</a></li>
+                <li>
+                  <div class="subnav">
+                    <button class="subnavbtn">
+                      Pages <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                      <a href="#">Page</a>
+                      <a href="#">Page</a>
+                      <a href="#">Page</a>
+                      <a href="#">Page</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="menu-login">
+                <li><a href="#">Login</a></li>
+                <li><a href="#" class="btn-primary">Sign Up</a></li>
+              </ul>
+            </div>
+            <div class="mobile-menu">
+              <span onclick="openNav()">&#9776;</span>
+              <div id="myNav" class="overlay">
+                <a
+                  href="javascript:void(0)"
+                  onclick="closeNav()"
+                  class="closebtn"
+                  >&times;</a
+                >
+                <div class="overlay-content">
+                  <a onclick="closeNav()" href="#">Restaurants</a>
+                  <a onclick="closeNav()" href="#">Recipes</a>
+                  <a onclick="closeNav()" href="#">About</a>
+                  <a onclick="closeNav()" href="#">Page</a>
+                  <div onclick="closeNav()" class="subnav">
+                    <button class="subnavbtn">
+                      Pages <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                      <a href="#bring">Bring</a>
+                      <a href="#deliver">Deliver</a>
+                      <a href="#package">Package</a>
+                      <a href="#express">Express</a>
+                    </div>
+                  </div>
+                  <a onclick="closeNav()" href="#">Login</a>
+                  <a onclick="closeNav()" href="#" class="btn-primary"
+                    >Sign Up</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END MAIN MENU-->
+
+    <!-- START HERO SECTION -->
+    <div class="hero">
+      <div class="container">
+        <div class="grid-2">
+          <div class="hero-left">
+            <h1>Your Favorite Food Delivery Partner</h1>
+            <p class="sub-title">
+              The food at your doorstep. Why starve when you have us. You hunger
+              partner. Straight out of the oven to your doorstep.
+            </p>
+            <form action="">
+              <input type="text" placeholder="Enter your delivery location" />
+              <input type="button" value="Order Now" class="btn btn-primary" />
+            </form>
+            <div class="app">
+              <img src="img/App Store Black Border.png" alt="" />
+              <img src="img/Google Play Black Border.png" alt="" />
+            </div>
+          </div>
+          <div class="hero-right">
+            <img src="img/banner.png" alt="banner" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END HERO SECTION -->
+
+    <!-- START FOOD SECTION -->
+    <section class="food">
+      <div class="container">
+        <div class="main-title text-center">
+          <h2 class="title">
+            More Than <span class="c-red">10,000</span> Dishes To Order!
+          </h2>
+          <p class="sub-title">
+            Welcome to The Biggest Network of Food Ordering & Delivery
+          </p>
+        </div>
+        <div class="food-row flex">
+          <div class="left">
+            <div class="food-items grid-4">
+              <div class="blank"></div>
+              <div class="food-item text-center">
+                <div class="food-img">
+                  <img src="img/pizza-food.png" alt="pizza" />
+                </div>
+                <p class="title">Pizza</p>
+              </div>
+
+              <div class="food-item text-center">
+                <div class="food-img">
+                  <img src="img/burger.png" alt="burger" />
+                </div>
+
+                <p class="title">Burger</p>
+              </div>
+
+              <div class="food-item text-center">
+                <div class="food-img">
+                  <img src="img/sushi.png" alt="sushi" />
+                </div>
+                <p class="title">Sushi</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="food-item-header">
+              <h3>
+                Find <span class="c-red">deals</span>,
+                <span class="c-green">free delivery</span>, and more from our
+                restaurant partners.
+              </h3>
+              <div class="text-right">
+                <img src="img/bike.png" alt="bike" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="food-row flex">
+          <div class="right">
+            <div class="food-item-quate">
+              <i class="fa-solid fa-quote-right"></i>
+              <p>
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+              </p>
+            </div>
+          </div>
+          <div class="left">
+            <div class="food-items grid-4">
+              <div class="food-item text-center">
+                <div class="food-img">
+                  <img src="img/Pasta.png" alt="pasta" />
+                </div>
+                <p class="title">Pasta</p>
+              </div>
+
+              <div class="food-item text-center">
+                <div class="food-img">
+                  <img src="img/Salad.png" alt="Salad" />
+                </div>
+                <p class="title">Salad</p>
+              </div>
+
+              <div class="food-item text-center">
+                <div class="food-img">
+                  <img src="img/Desserts.png" alt="Desserts" />
+                </div>
+                <p class="title">Desserts</p>
+              </div>
+
+              <div class="blank"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END FOOD SECTION -->
+
+    <!-- START ORDER SECTION -->
+    <section class="order">
+      <div class="container">
+        <div class="main-title">
+          <h2 class="title text-center">How To Order?</h2>
+        </div>
+        <div class="order-process-row flex">
+          <div class="order-process-items grid-4">
+            <div class="order-process">
+              <h3 class="process-number c-red">01</h3>
+              <div class="order-item text-center">
+                <div class="order-img">
+                  <img src="img/location.png" alt="location" />
+                </div>
+                <p class="title">Choose your location</p>
+              </div>
+            </div>
+
+            <div class="order-process">
+              <h3 class="process-number c-red">02</h3>
+              <div class="order-item text-center">
+                <div class="order-img">
+                  <img src="img/man.png" alt="man" />
+                </div>
+                <p class="title">Choose what to eat</p>
+              </div>
+            </div>
+
+            <div class="order-process">
+              <h3 class="process-number c-red">03</h3>
+              <div class="order-item text-center">
+                <div class="order-img">
+                  <img src="img/burger.png" alt="burger" />
+                </div>
+                <p class="title">May your first order</p>
+              </div>
+            </div>
+
+            <div class="order-process">
+              <h3 class="process-number c-red">04</h3>
+              <div class="order-item text-center">
+                <div class="order-img">
+                  <img src="img/home.png" alt="Home" />
+                </div>
+                <p class="title">Now! Your food in way</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END ORDER SECTION -->
+
+    <!-- START FEEDBACK SECTION -->
+    <section class="feedback">
+      <div class="container">
+        <div class="feedback-inner">
+          <div class="main-title text-center">
+            <h2 class="title">Our Clients Feedback</h2>
+            <p class="sub-title">
+              The food at your doorstep. Why starve when you have us. You hunger
+              partner. Straight out of the oven to your doorstep.
+            </p>
+          </div>
+
+          <div
+            class="owl-carousel owl-theme feedback-items"
+            id="feedback-items"
+          >
+            <div class="item feedback-item text-center">
+              <div class="quate c-red">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
+              <div class="feedback-text">
+                <p>
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi”
+                </p>
+              </div>
+              <div class="client-info">
+                <p class="client-name">Mitchell</p>
+                <p class="client-title">CEO, Bexon Agency</p>
+              </div>
+            </div>
+            <div class="item feedback-item text-center">
+              <div class="quate c-red">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
+              <div class="feedback-text">
+                <p>
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi”
+                </p>
+              </div>
+              <div class="client-info">
+                <p class="client-name">Mitchell</p>
+                <p class="client-title">CEO, Bexon Agency</p>
+              </div>
+            </div>
+            <div class="item feedback-item text-center">
+              <div class="quate c-red">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
+              <div class="feedback-text">
+                <p>
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi”
+                </p>
+              </div>
+              <div class="client-info">
+                <p class="client-name">Mitchell</p>
+                <p class="client-title">CEO, Bexon Agency</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END FEEDBACK SECTION -->
+
+    <!-- START NEWSLETTER SECTION -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="grid-2">
+          <div class="main-title">
+            <h2 class="title">Subscribe our newsletter</h2>
+            <p class="sub-title">
+              Browse local restaurants and businesses for delivery by entering
+              your address blow.
+            </p>
+          </div>
+          <form action="" class="text-right">
+            <input type="text" placeholder="Enter your delivery location" />
+            <input type="button" value="Send" class="btn btn-primary" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- END NEWSLETTER SECTION -->
+
+    <!-- START FOOTER SECTION -->
+    <section class="footer">
+      <footer>
+        <div class="container">
+          <div class="grid-3">
+            <div>
+              <div class="logo"><img src="img/logo.png" alt="logo" /></div>
+              <div class="app">
+                <img src="img/App Store Black Border.png" alt="" />
+                <img src="img/Google Play Black Border.png" alt="" />
+              </div>
+            </div>
+            <div class="grid-2">
+              <div>
+                <h5>Quick links</h5>
+                <div class="links">
+                  <a href="#">Features</a>
+                  <a href="#">Food Menu</a>
+                  <a href="#">Offer</a>
+                  <a href="#">Review</a>
+                  <a href="#">Rider</a>
+                </div>
+              </div>
+              <div>
+                <h5>Get to Know Us</h5>
+                <div class="links">
+                  <a href="#">Gift Cards</a>
+                  <a href="#">DoorDash Stories</a>
+                  <a href="#">LinkedIn</a>
+                  <a href="#">Glassdoor</a>
+                  <a href="#">Accessibility</a>
+                </div>
+              </div>
+            </div>
+            <div class="grid-2">
+              <div>
+                <h5>News</h5>
+                <div class="links">
+                  <a href="#">Blog</a>
+                  <a href="#">FAQ</a>
+                  <a href="#">Lift Media</a>
+                  <a href="#">Press</a>
+                  <a href="#">Presse kit</a>
+                </div>
+              </div>
+              <div>
+                <h5>Contact</h5>
+                <div class="links">
+                  <a href="#">WhatsApp</a>
+                  <a href="#">Support 24</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- END FOOTER SECTION -->
+
+    <!-- START COPYRIGHT SECTION -->
+    <div class="copyright">
+      <div class="container">
+        <div class="grid-2">
+          <div>
+            <p>© 2023 pizza.All right reserved</p>
+          </div>
+          <div class="links text-right">
+            <a href="#">Privacy</a>
+            <a href="#">Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END COPYRIGHT SECTION -->
+
+    <!-- jQuery JS -->
+    <script src="js/jquery.min.js"></script>
+    <!-- owl-carousel JS -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>
